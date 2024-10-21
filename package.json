@@ -1,0 +1,13 @@
+{
+  "name": "colorkr",
+  "version": "1.0.0",
+  "description": "simple rich color picker",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "https://github.com/w3cdpass/colorkr",
+  "readme": "https://github.com/w3cdpass/colorkr/blob/main/readme.md",
+  "keywords": ["color", "picker", "rich-color-picker"],
+  "author": "w3cdpass",
+  "license": "ISC"
+}

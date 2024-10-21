@@ -1,6 +1,6 @@
-body{
-  background-color: black;
-}
+/* body{
+  background-color: #0d1117;
+} */
 .pick-container {
   display: flex;
   gap: 30px;

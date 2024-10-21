@@ -7,9 +7,19 @@
 
 <p>
 
+## Usage
+```js
+import { initColorPicker } from "./colorkr.min.js";
+
+// your id and class 
+initColorPicker('your-id')
+
+```
+
+
 
 ```js
-//index.js ln76:col41
+//colorkr.js ln22:col55
 arrow.classList.add('arrow-bottom-center');
 ```
 Customize the arrow 

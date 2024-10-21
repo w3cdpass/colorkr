@@ -1,0 +1,144 @@
+body{
+  background-color: black;
+}
+.pick-container {
+  display: flex;
+  gap: 30px;
+  position: relative;
+}
+
+/* Color picker styling */
+.color-picker {
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 40px;
+}
+
+#color-options {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  position: absolute;
+  top: 43px;
+  left: 198px;
+  z-index: 10;
+  background-color: white;
+  border: 1px solid #d3d1d1;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+/* Add arrow styling inside the color-options */
+#color-options .arrow {
+  position: absolute;
+  top: -9px; /* Adjust this to place the arrow above the color-options div */
+  left: 8px; /* Adjust based on where you want the arrow horizontally */
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 10px solid #d3d1d1; /* Arrow color */
+}
+
+.color-option {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 0px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  transition: border 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.color-option:hover {
+  border: 4px solid rgb(254, 254, 254);
+}
+
+.tooltip {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 5px;
+  position: absolute;
+  z-index: 100;
+  bottom: 85px;
+  left: 14%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.color-option:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+
+#color-options .arrow.arrow-top-left {
+  left: 6px; /* Position for left */
+bottom: 80px;
+  left: 17%
+}
+
+#color-options .arrow.arrow-top-center {
+  left: 87px; /* Position for right */
+}
+
+#color-options .arrow.arrow-top-right {
+  left: 168px;
+}
+
+#color-options .arrow.arrow-left-top {
+  left: -13px;
+  top: 9px;
+  transform: rotate(-90deg);
+}
+
+#color-options .arrow.arrow-left-center {
+  left: -13px;
+  top: 30px;
+  transform: rotate(-90deg);
+}
+
+#color-options .arrow.arrow-left-right {
+  left: -13px;
+  top: 53px;
+  transform: rotate(-90deg);
+}
+
+#color-options .arrow.arrow-bottom {
+  top: 70px;
+  transform: rotate(180deg);
+}
+
+#color-options .arrow.arrow-bottom-center {
+  top: 70px;
+  left: 87px;
+  transform: rotate(180deg);
+}
+
+#color-options .arrow.arrow-bottom-right{
+  top: 70px;
+  left: 168px;
+  transform: rotate(180deg);
+}
+
+#color-options .arrow.arrow-right-top {
+  left: 187.9px;
+  top: 8px;
+  transform: rotate(90deg);
+}
+
+#color-options .arrow.arrow-right-center {
+  left: 187.9px;
+  top: 30px;
+  transform: rotate(90deg);
+}
+
+#color-options .arrow.arrow-right-bottom {
+  left: 187.9px;
+  top: 53px;
+  transform: rotate(90deg);
+}
